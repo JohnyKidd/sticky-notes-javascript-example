@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    color: #FFD166;
+    background: #EFD780;
+}
+#header{
+    display: flex;
+    justify-content: space-around;
+    background: #93032E;
+    height: 10vh;
+}
+button{
+    background: #FFA3AF;
+    color: #270722;
+    border: 1px solid #270722;
+    border-radius: 10px;
+    width: 10vw;
+    margin: 1rem;
+}
+button:hover{
+    background: #270722;
+    color: #FFA3AF;
+    border: 1px solid #FFA3AF;
+}
+#title{
+    margin: 1rem;
+}
+#noteDiv{
+    display: flex;
+    flex-wrap: wrap;
+}
+.note{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #93032E;
+    border-radius: 15px;
+    width: 15vw;
+    height: 30vh;
+    margin: 0.5rem;
+}
+textarea {
+    border: none;
+    outline: none;
+    color: #FFD166;
+    font-size: 2rem;
+    resize: none;
+}
+.clearButton{
+    background: red;
+    color: white;
+    font-size: 2rem;
+    width: 2.5vw;
+    border-radius: 50%;
+    border: 1px solid white;
+}
+
+/* media queries for responsive design */
+@media screen and (max-width: 992px) {
+    #noteDiv{
+        flex-direction: column;
+        align-items: center;
+    }
+    .note{
+        width: 50vw;
+        height: 25vh;
+        border: none;
+        border-radius: 0px;
+        margin-bottom: 5rem;
+    }
+    .clearButton{
+        font-size: 1rem;
+    }
+  }
